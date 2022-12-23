@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: all 0.2s ease;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    box-sizing: border-box;
+    font-size: max(18px);
+    line-height: 1.5;
+    background-color: hsl(222, 26%, 31%);
+    color: white;
+    padding: 20px;
+}
+
+.container {
+    max-width: 760px;
+    margin: 0px auto 30px;
+    padding: 10px;
+}
+
+.container .calc-theme {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+}
+
+.calc-theme h2 {
+    margin-bottom: -3px;
+}
+
+.calc-theme .theme .numbers {
+    text-align: right;  
+}
+
+.theme .numbers span {
+    margin-right: 9px;
+}
+
+.calc-theme .theme .themes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.theme .themes .theme-badge {
+    margin: 0;
+    margin-left: 20px;
+    width: 80px;
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 20px;
+    padding: 0 3px;
+}
+
+.themes .theme-badge .theme-button {
+    height: 80%;
+    width: 25px;
+    border-radius: 50%;
+    border: none;
+    background-color: hsl(6, 63%, 50%);
+    margin-top: 3px;
+    /* margin-left: 50px; */
+    cursor: pointer;
+}
+
+.themes .theme-badge .theme2, .themes .theme-badge .theme3 {
+    display: none;
+}
+
+.themes .theme-badge .theme2{
+    margin-left: 25px;
+    background-color: hsl(25, 98%, 40%);
+}
+
+.themes .theme-badge .theme3{
+    margin-left: 50px;
+    background-color: hsl(176, 100%, 44%);
+}
+
+.themes .theme-badge .theme-button:hover {
+    opacity: 50%;
+    transform: scale(1.5);
+}
+
+
+.container .display {
+    font-size: 3.5rem;
+    width: 100%;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: hsl(224, 36%, 15%);
+    color: white;
+}
+input::placeholder{
+    color: hsl(221, 14%, 31%);
+}
+.container .keypad {
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+    gap: 20px;
+}
+
+.keypad-btn {
+    height: 100px;
+    font-size: 2.5rem;
+    border-radius: 10px;
+    border: none;
+    font-weight: bolder;
+    cursor: pointer;
+    background-color: hsl(30, 25%, 89%);
+    color: hsl(221, 14%, 31%);
+    border-bottom: 5px solid hsl(28, 16%, 65%);
+}
+
+.keypad-btn:hover {
+    opacity: 0.7;
+    transition: 0.1s;
+    transform: scale(1.1);
+    
+}
+
+.container .keypad .reset {
+    grid-column: 1 / 3;
+}
+
+.container .keypad .reset, .container .keypad .del {
+    background-color: hsl(225, 21%, 49%);
+    color: white;
+    border-color: hsl(224, 28%, 35%);
+}
+
+.container .keypad .reset:hover, .container .keypad .del:hover {
+    opacity: 50%;
+}
+
+.container .keypad .equals {
+    grid-column: 3 / 5;
+    background-color: hsl(6, 63%, 50%);
+    color: white;
+    border-color: hsl(6, 70%, 34%);
+}
+
+.container .keypad .equals:hover {
+    opacity: 50%;
+}
+
+
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+@media (max-width:425px) {
+    body {
+        padding: 10px 0px;
+    }
+    footer {
+        font-size: 15px;
+    }
+    .container .display {
+        font-size: 3rem;
+        padding: 10px 15px;
+    }
+
+    .container .keypad {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .keypad-btn {
+        height: 70px;
+        font-size: 1.5rem;
+    }
+
+    .container .calc-theme {
+        padding: 0px 10px;
+    }   
+}
+
+@media (max-width: 320px) {
+    .container .display {
+        font-size: 2rem;
+        padding: 15px;
+    }
+
+    .keypad .del {
+        font-size: 1.3rem;
+    }
+}
+
