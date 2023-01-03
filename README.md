@@ -32,8 +32,8 @@ Users should be able to:
 ![Theme-3](./solution/Theme-3.jpeg)
 
 ### Links
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/Fearless09/Calculator-App)
+- Live Site URL: (https://fearless09.github.io/Calculator-App/)
 
 
 ## My process
